@@ -1,6 +1,11 @@
 const app = new Vue({
   el: '#app',
 
+  // bonus
+  mounted() {
+    setInterval(this.nextSlide, 3000);
+  }, 
+
   data: {
 
     items:[
