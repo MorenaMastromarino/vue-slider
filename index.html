@@ -24,17 +24,17 @@
   
         <div class="slider-left">
   
-          <div v-for="item in items" class="image active">
-            <img :src="item.image">
+          <div class="image">
+            <img :src="items[counter].image">
     
-            <div class="text-box">
-              <h3 class="title">{{item.title}}</h3>
+            <div class="text-box text-end">
+              <h3 class="title">{{items[counter].title}}</h3>
               <p class="text">
-                {{item.text}}
+                {{items[counter].text}}
               </p>  
             </div>
           </div> 
-          
+
         </div>
   
         <div class="slider-right">
@@ -43,11 +43,11 @@
             <img :src="item.image">
           </div>
             
-          <div class="prev">
+          <div @click='prevSlide' class="prev">
             <i class="fas fa-chevron-up"></i>
           </div>
   
-          <div class="next">
+          <div @click='nextSlide' class="next">
            <i class="fas fa-chevron-down"></i>
           </div>
   

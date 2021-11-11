@@ -20,21 +20,15 @@
 }
 
 .slider-left .image {
-  display: none;
   position: relative;
+  height: 100%;
 }
 
 .slider-left .text-box {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  text-align: right;
   color: white;
-}
-
-.slider-left .image.active {
-  display: block;
-  height: 100%;
 }
 
 .slider-right {

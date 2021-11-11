@@ -31,7 +31,24 @@ const app = new Vue({
       },
     ],
 
+    counter: 0,
 
+  },
+
+  methods: {
+    nextSlide(){
+      this.counter++;
+      if(this.counter === this.items.length){
+        this.counter = 0;
+      }
+    },
+
+    prevSlide(){
+      this.counter--;
+      if(this.counter === 0){
+        this.counter = this.items.length - 1;
+      }
+    },
   },
 
 });
