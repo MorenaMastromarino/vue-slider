@@ -40,14 +40,14 @@ const app = new Vue({
       this.counter++;
       if(this.counter === this.items.length){
         this.counter = 0;
-      }
+      };      
     },
 
     prevSlide(){
       this.counter--;
-      if(this.counter === 0){
+      if(this.counter < 0){
         this.counter = this.items.length - 1;
-      }
+      };
     },
   },
 

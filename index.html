@@ -39,7 +39,7 @@
   
         <div class="slider-right">
           
-          <div v-for="item in items" class="item active">
+          <div v-for="item in items" class="item" :class="{active: items[counter].image === item.image }">
             <img :src="item.image">
           </div>
             
